@@ -521,11 +521,6 @@ class DropBoxController{
                 this.openFolder();
             });
         });
-        /*
-        <span class="breadcrumb-segment__wrapper">
-            
-        </span>
-        */
     }
 
     initEventsLi(li){
@@ -542,7 +537,7 @@ class DropBoxController{
                 break;
 
                 default:
-                    window.open("/file?path" + file.path);
+                    window.open("/file?path=" + file.path);
             }
         });
 
